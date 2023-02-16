@@ -1,0 +1,14 @@
+name: admin					-> (Admin) Can add & delete users
+pass: 123
+
+--------------
+
+nome: Nuno Frazão				-> (Employee) Can change the state of atuadores
+email: 2212556@my.ipleiria.pt
+pass: 123
+
+--------------
+
+nome: José Parreira				-> (Normal) No permissions
+email: 2000000@my.ipleiria.pt
+pass: 123
