@@ -1,0 +1,125 @@
+/* --------------- NORMAL TAGS --------------- */
+
+div#side-nav {
+    position: relative;
+    width: 25px;
+    min-width: 250px;
+    height: 100vh;
+    background-color: #1d1d1d;
+    overflow: hidden !important;
+    transition: min-width .3s ease;
+}
+
+div.side-nav-hidden {
+    min-width: 0 !important;
+    width: 0 !important;
+}
+
+div#user-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+div#user-info img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+div#user-info h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+div#side-nav h2 {
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+}
+
+div#side-nav h2 a {
+    position: absolute;
+    width: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+div#side-nav hr.side-hr {
+    width: 80%;
+    margin: 20px auto;
+    background-image: linear-gradient(to right, rgba(192, 158, 40, 1), transparent);
+}
+
+div#div-list ul.main-lists li {
+    position: relative;
+    width: 100%;
+    padding: 15px 30px;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+}
+
+div#div-list ul.main-lists li a {
+    display: block;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
+}
+
+div#div-list ul.main-lists li a.main-anc {
+    transition: padding .5s ease;
+}
+
+div#div-list ul.main-lists li svg {
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+div#div-list ul.main-lists li svg.rotated-arrow {
+    transform-origin: center;
+    top: 20px;
+    transform: rotate(180deg) !important;
+}
+
+div#div-list ul.nav-listas {
+    margin: 20px 0px 10px 0px;
+    padding: 5px 0px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+div#div-list ul.nav-listas li {
+    padding: 5px 30px;
+}
+
+
+div#div-list ul.nav-listas hr {
+    background: rgba(192, 158, 40, 1);
+    height: 1px;
+    margin: 5px 0px;
+}
+
+/* --------------- ON HOVER --------------- */
+
+div#div-list ul.main-lists li:hover a.main-anc {
+    color: rgba(192, 158, 40, 1);
+    padding-left: 10px;
+}
+
+div#div-list ul.in-lists li:hover a {
+    color: rgba(192, 158, 40, 1);
+}

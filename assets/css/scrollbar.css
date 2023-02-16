@@ -1,0 +1,26 @@
+/* ------------ TAGS NORMAIS ------------ */
+
+::selection {
+    background: rgba(184, 184, 184, 0.6);
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* --------------- ON HOVER --------------- */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

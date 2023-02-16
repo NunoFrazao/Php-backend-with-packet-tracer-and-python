@@ -1,0 +1,14 @@
+/* --------------- NORMAL TAGS --------------- */
+
+span.span-portas {
+	position: relative;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+span.span-portas svg {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+}

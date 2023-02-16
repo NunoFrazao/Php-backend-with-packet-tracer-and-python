@@ -1,0 +1,28 @@
+/* --------------- NORMAL TAGS --------------- */
+
+div#users-table table tbody td.users-name {
+	color: #c09e28;
+}
+
+div#users-table table tbody td.masterOnly span {
+	position: relative;
+	padding: 0px 20px;
+	cursor: pointer !important;
+	background-color: #af3b3b;
+	border-radius: .25rem;
+}
+
+div#users-table table tbody td.masterOnly span.masterLine {
+	background-color: #ccc !important;
+	cursor: normal;
+	pointer-events: none;
+}
+
+div#users-table table tbody td.masterOnly span svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	fill: #fff;
+}

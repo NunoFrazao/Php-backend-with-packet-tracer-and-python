@@ -1,0 +1,94 @@
+/* --------------- NORMAL TAGS --------------- */
+
+div.info-section form.form-sensor {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.info-section form.form-sensor button {
+    margin-left: 10px;
+    background-color: #c09e28;
+}
+
+div.info-section form.form-sensor input.input-relative {
+    padding-left: 60px;
+}
+
+div.info-section form.form-sensor input.input-relative {
+    position: relative;
+}
+
+div.info-section form.form-sensor::before {
+    content: "Valor: ";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    width: 100px;
+    height: 20px;
+    z-index: 1;
+    transform: translateY(-63%);
+    pointer-events: none;
+    color: #c09e28;
+}
+
+label.switch {
+    position: relative;
+    width: 60px;
+    height: 34px;
+}
+
+label.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+span.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+span.slider.round {
+    border-radius: 34px;
+}
+
+span.slider.round:before {
+    border-radius: 50%;
+}
+
+span.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* --------------- FOCUS & CHECKED --------------- */
+
+input:checked + span.slider {
+    background-color: #c09e28;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}

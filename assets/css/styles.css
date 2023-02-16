@@ -1,0 +1,128 @@
+/* --------------- NORMAL TAGS --------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: 16px;
+    background-color: #202020;
+}
+
+button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(204, 204, 204, .2) !important;
+}
+
+main#main-div {
+    display: flex;
+}
+
+main#main-div div.card {
+    background-color: rgba(0,0,0,.125);
+}
+
+div#content {
+    width: calc(100% - 250px);
+    height: 100vh;
+    overflow-y: scroll;
+    transition: width .3s ease;
+}
+
+div.content-hidden {
+    width: 100% !important;
+}
+
+div.see-more {
+    position: relative;
+}
+
+div.see-more a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #c09e28;
+}
+
+div.see-more svg {
+    position: absolute;
+    top: 53%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #c09e28;
+}
+
+div.info-section div.card-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 37, 41, 1);
+}
+
+div.info-section div.card-body img {
+    position: relative;
+    width: 70%;
+}
+
+div.info-section div.card-footer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+div.info-section div.card-footer a {
+    font-size: .9rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+}
+
+div.table-section span.info-span {
+    color: rgba(255, 255, 255, .6);
+}
+
+div#door-div, div.value-div {
+    height: 100%;
+    border: 1px solid #c09e28;
+}
+
+div#door-div div.locked-footer {
+    background-color: #c09e28;
+    border: 1px solid #c09e28;
+}
+
+div#door-div div.locked-footer span {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(33, 37, 41, 1);
+}
+
+div.others-table {
+    padding: 0;
+}
+
+div.table-div {
+    overflow-x: scroll;
+    justify-content: start !important;
+}
+
+/* Badges  */
+span.badge {
+    width: 80px;
+}
+
+/* --------------- MEDIA RESPONSIVE --------------- */
+
+@media only screen and (max-width: 769px) {
+    div#content {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    div.info-section div.card-body {
+        height: inherit;
+    }
+}

@@ -1,0 +1,47 @@
+/* --------------- NORMAL TAGS --------------- */
+
+div#content div#top-nav {
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	padding: 10px 3rem;
+	background-color: rgba(33, 37, 41, 1);
+}
+
+div#top-nav span {
+	position: absolute;
+	top: 50%;
+	left: calc(3rem - 20px);
+	padding: 20px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+div#top-nav svg path {
+	fill: #c09e28;
+}
+
+div#top-nav button#button-logout {
+	border: 1px solid #c09e28;
+	color: #c09e28;
+	transition: padding .3s ease;
+}
+
+div#top-nav div.mensagens {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px 10px;
+	transition: padding .3s ease;
+}
+
+/* --------------- ON HOVER --------------- */
+
+div#top-nav button:hover {
+    padding: .375rem 1.5rem;
+}
+
+div#top-nav div.mensagens button:hover {
+	padding: .25em .25em;
+}

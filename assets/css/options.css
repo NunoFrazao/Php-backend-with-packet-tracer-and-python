@@ -1,0 +1,51 @@
+/* --------------- NORMAL TAGS --------------- */
+
+form#form-registo span.erro,
+form#form-registo span.erro-add {
+    display: none;
+	color: #af3b3b;
+}
+
+form#form-registo label {
+	margin: 0;
+}
+
+form#form-registo span.required-elem {
+    color: #af3b3b !important;
+}
+
+form#form-registo input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+form#form-registo button.change-button {
+	background-color: #c09e28;
+}
+
+div#pass-div button#change-password {
+	background-color: #af3b3b;
+}
+
+div#pass-div button#delete-account {
+	background-color: #af3b3b;
+}
+
+/* Autofill input css */
+form#form-registo input:-webkit-autofill,
+form#form-registo input:-webkit-autofill:hover, 
+form#form-registo input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* --------------- ON FOCUS --------------- */
+
+form#form-registo input {
+    outline: none;
+    box-shadow: none;
+}

@@ -1,0 +1,32 @@
+/* --------------- NORMAL TAGS --------------- */
+
+div.modals {
+	background-color: rgba(0, 0, 0, .4);
+}
+
+div.modals div.modal-content {
+	background-color: #212529;
+	color: #fff;
+}
+
+div.modals div.modal-header {
+	border-bottom: 1px solid #1d1d1d;
+}
+
+div.modals div.modal-header span.name-user {
+	color: #c09e28;
+}
+
+div.modals div.modal-footer {
+	border-top: 1px solid #1d1d1d;
+}
+
+
+div.modals div.modal-footer button.buttons {
+	background-color: #c09e28;
+	border-color: #c09e28;
+}
+
+div.modals div.modal-body span.span-nome-modal {
+	color: #c09e28;
+}
